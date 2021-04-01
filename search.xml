@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2021加油吧,打工人</title>
-    <url>/2021/01/22/2021%E5%8A%A0%E6%B2%B9%E5%90%A7-%E6%89%93%E5%B7%A5%E4%BA%BA/</url>
-    <content><![CDATA[<p>​        2020年，充满魔幻的一年如白驹过隙在指缝间溜走了。过去的一年干了很多事情，写了很多代码，也得到了很多人的认可，也错过了很多人和事情，有满足也有缺憾。2021年，我应该怎么样去度过呢？</p>
-<p>​        我给自己定了几件事情：去一趟旅行、每周至少分享一面博客、静下心来专研技术、看几本书……想一想要做的事情挺多，能坚持下来也并不容易，2021年加油吧，打工人！对技术有追求的我，要变得更热爱生活！</p>
+    <title>2020年度规划</title>
+    <url>/2020/05/07/2020%E5%B9%B4%E5%BA%A6%E8%A7%84%E5%88%92/</url>
+    <content><![CDATA[<p>2020 注定是一个不平凡的一年，2020年3月2日开始入职爱云校，开启了人生新的篇章。疫情在全世界大流行，社会笼罩着阴沉沉的气息，人心惶惶，中国经济也迅速按下了暂停键。随着中国疫情的逐渐被控制，国内各地复工在有条不紊地进行。2020年5月6日，我们也复工了。对我而言，新的工作环境、新的工作内容、新的工作伙伴会成为未来重要的人和事。桃李不言，下自成蹊。希望能够在新的岗位贡献自己的力量、实现自己的价值。</p>
+<h3><span id="du-shu-ji-hua">读书计划</span><a href="#du-shu-ji-hua" class="header-anchor">#</a></h3><ul>
+<li><input checked disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/26356948/" target="_blank" rel="noopener">摆渡人</a></li>
+</ul>
+<ul>
+<li><input checked disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/26877752/" target="_blank" rel="noopener">恶意</a></li>
+</ul>
+<ul>
+<li><input disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/34434309/" target="_blank" rel="noopener">82年生的金智英</a></li>
+</ul>
+<ul>
+<li><input disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/27061123/" target="_blank" rel="noopener">MongoDB实战(第二版)</a></li>
+</ul>
+<ul>
+<li><input disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/25768396/" target="_blank" rel="noopener">深入浅出Node.js</a></li>
+</ul>
+<h3><span id="guan-ying-ji-hua">观影计划</span><a href="#guan-ying-ji-hua" class="header-anchor">#</a></h3><ul>
+<li><input checked disabled type="checkbox"> ​      <a href="https://open.163.com/ted/" target="_blank" rel="noopener">网易公开课TED</a></li>
+</ul>
+<h3><span id="xue-xi-ji-hua">学习计划</span><a href="#xue-xi-ji-hua" class="header-anchor">#</a></h3><ul>
+<li><input checked disabled type="checkbox"> ​      <a href="https://www.typescriptlang.org/docs/home.html" target="_blank" rel="noopener">TypeScript</a></li>
+</ul>
+<ul>
+<li><input checked disabled type="checkbox"> ​      <a href="http://expressjs.com/" target="_blank" rel="noopener">Express</a></li>
+</ul>
+<ul>
+<li><input checked disabled type="checkbox"> ​      <a href="https://eggjs.org/zh-cn/intro/quickstart.html" target="_blank" rel="noopener">Egg</a></li>
+</ul>
+<ul>
+<li><input checked disabled type="checkbox"> ​      <a href="https://docs.nestjs.com/" target="_blank" rel="noopener">nestjs</a></li>
+</ul>
+<ul>
+<li><input checked disabled type="checkbox"> ​      <a href="https://time.geekbang.org/column/intro/140?utm_source=pinpaizhuanqu&utm_medium=geektime&utm_campaign=guanwang&utm_term=guanwang&utm_content=0511" target="_blank" rel="noopener">Linux 性能优化实战</a></li>
+</ul>
+<h3><span id="bo-ke-ji-hua">博客计划</span><a href="#bo-ke-ji-hua" class="header-anchor">#</a></h3><p>​       技术分享 * 50</p>
+<p>​       leetcode * 50</p>
+<p>​       其他博客 * 10</p>
 ]]></content>
       <categories>
         <category>规划</category>
@@ -39,6 +74,48 @@
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2021加油吧,打工人</title>
+    <url>/2021/01/22/2021%E5%8A%A0%E6%B2%B9%E5%90%A7-%E6%89%93%E5%B7%A5%E4%BA%BA/</url>
+    <content><![CDATA[<p>​        2020年，充满魔幻的一年如白驹过隙在指缝间溜走了。过去的一年干了很多事情，写了很多代码，也得到了很多人的认可，也错过了很多人和事情，有满足也有缺憾。2021年，我应该怎么样去度过呢？</p>
+<p>​        我给自己定了几件事情：去一趟旅行、每周至少分享一面博客、静下心来专研技术、看几本书……想一想要做的事情挺多，能坚持下来也并不容易，2021年加油吧，打工人！对技术有追求的我，要变得更热爱生活！</p>
+]]></content>
+      <categories>
+        <category>规划</category>
+      </categories>
+      <tags>
+        <tag>规划</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode - 两数之和</title>
+    <url>/2020/05/10/LeetCode-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
+    <content><![CDATA[<p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
+<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9</span><br><span class="line">因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>, len = nums.length; i &lt; len; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> j = i + <span class="number">1</span>, len = nums.length; j &lt; len; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (target === (nums[i] + nums[j]))</span><br><span class="line">                <span class="keyword">return</span> [i, j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">twoSum([<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>], <span class="number">26</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node在密集型计算时候eventLoop堵塞</title>
+    <url>/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/</url>
+    <content><![CDATA[<h2><span id="node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai">Node在密集型计算时候eventLoop堵塞</span><a href="#node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai" class="header-anchor">#</a></h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> moment = <span class="built_in">require</span>(<span class="string">'moment'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' begin'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout1'</span>);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 模拟计算密集</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000000</span> ; ++i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span> ; j &lt; <span class="number">100000</span> ; ++j);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' end'</span>);</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm begin</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm end</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm timeout1</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:15:02 pm timeout2  //注意这里的时间晚了好久</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
@@ -95,35 +172,6 @@
       </tags>
   </entry>
   <entry>
-    <title>LeetCode - 两数之和</title>
-    <url>/2020/05/10/LeetCode-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
-    <content><![CDATA[<p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9</span><br><span class="line">因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>, len = nums.length; i &lt; len; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> j = i + <span class="number">1</span>, len = nums.length; j &lt; len; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (target === (nums[i] + nums[j]))</span><br><span class="line">                <span class="keyword">return</span> [i, j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">twoSum([<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>], <span class="number">26</span>);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>LeetCode</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>LeetCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Node在密集型计算时候eventLoop堵塞</title>
-    <url>/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/</url>
-    <content><![CDATA[<h2><span id="node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai">Node在密集型计算时候eventLoop堵塞</span><a href="#node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai" class="header-anchor">#</a></h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> moment = <span class="built_in">require</span>(<span class="string">'moment'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' begin'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout1'</span>);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 模拟计算密集</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000000</span> ; ++i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span> ; j &lt; <span class="number">100000</span> ; ++j);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' end'</span>);</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm begin</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm end</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm timeout1</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:15:02 pm timeout2  //注意这里的时间晚了好久</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Node</category>
-      </categories>
-      <tags>
-        <tag>Node</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>docker mongo数据的备份与恢复</title>
     <url>/2021/03/24/docker%20mongo%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/</url>
     <content><![CDATA[<ol>
@@ -164,21 +212,6 @@
       </tags>
   </entry>
   <entry>
-    <title>docker mongo数据的备份与恢复</title>
-    <url>/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h3><span id="chang-jing">场景</span><a href="#chang-jing" class="header-anchor">#</a></h3><p>我们经常在画百分比图表时候，直接四舍五入会出现相加不等于100%，最大余额法解决百分比和不是100%的问题。</p>
-<h3><span id="zen-me-bao-zheng-suo-you-zhan-bi-zhi-he-deng-yu-100">怎么保证所有占比之和等于100%</span><a href="#zen-me-bao-zheng-suo-you-zhan-bi-zhi-he-deng-yu-100" class="header-anchor">#</a></h3><p>echarts的饼图的百度通过传入数据自动算出每个项在总数当中所占的比例大小，且保证所有的比率相加等于100%，那他是如何计算百分比的呢。通过阅读<a href="https://github.com/apache/echarts/blob/master/src/util/number.ts" target="_blank" rel="noopener">源码</a>我们可以得知他使用最大余额法。</p>
-<h3><span id="dai-ma">代码</span><a href="#dai-ma" class="header-anchor">#</a></h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">3</span>, <span class="number">3</span>, <span class="number">8</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> aPercentage = getPercentValue(arr, <span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> bPercentage = getPercentValue(arr, <span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> cPercentage = getPercentValue(arr, <span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> percentageSum = aPercentage + bPercentage + cPercentage;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'get percentage'</span>, aPercentage, bPercentage, cPercentage, percentageSum);</span><br><span class="line"></span><br><span class="line"><span class="comment">//最大余额法解决百分比和不是100%的问题</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPercentValue</span>(<span class="params">arrList, index, precision</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!arrList[index]) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!precision) precision = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">let</span> sum = arrList.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val);</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">if</span> (sum === <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> digits = <span class="built_in">Math</span>.pow(<span class="number">10</span>, precision);</span><br><span class="line">    <span class="keyword">let</span> votesPerQuota = arrList.map(<span class="function">(<span class="params">val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val) / sum * digits * <span class="number">100</span>;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> targetSeats = digits * <span class="number">100</span>;</span><br><span class="line">    <span class="keyword">let</span> seats = votesPerQuota.map(<span class="function">(<span class="params">votes</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Math</span>.floor(votes);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> currentSum = seats.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + val;</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">let</span> remainder = votesPerQuota.map(<span class="function"><span class="keyword">function</span> (<span class="params">votes, index</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> votes - seats[index];</span><br><span class="line">    &#125;);</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">while</span> (currentSum &lt; targetSeats) &#123;</span><br><span class="line">        <span class="keyword">let</span> max = <span class="built_in">Number</span>.NEGATIVE_INFINITY;</span><br><span class="line">        <span class="keyword">let</span> maxId = <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = remainder.length; i &lt; len; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (remainder[i] &gt; max) &#123;</span><br><span class="line">                max = remainder[i];</span><br><span class="line">                maxId = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ++seats[maxId];</span><br><span class="line">        remainder[maxId] = <span class="number">0</span>;</span><br><span class="line">        ++currentSum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> seats[index] / digits;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Node</category>
-      </categories>
-      <tags>
-        <tag>Node</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>oracle实现流水号定时重置的问题</title>
     <url>/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50206265f4989?w=600&h=450&f=png&s=288572" alt></p>
@@ -195,54 +228,6 @@
       </categories>
       <tags>
         <tag>oracle</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2020年度规划</title>
-    <url>/2020/05/07/2020%E5%B9%B4%E5%BA%A6%E8%A7%84%E5%88%92/</url>
-    <content><![CDATA[<p>2020 注定是一个不平凡的一年，2020年3月2日开始入职爱云校，开启了人生新的篇章。疫情在全世界大流行，社会笼罩着阴沉沉的气息，人心惶惶，中国经济也迅速按下了暂停键。随着中国疫情的逐渐被控制，国内各地复工在有条不紊地进行。2020年5月6日，我们也复工了。对我而言，新的工作环境、新的工作内容、新的工作伙伴会成为未来重要的人和事。桃李不言，下自成蹊。希望能够在新的岗位贡献自己的力量、实现自己的价值。</p>
-<h3><span id="du-shu-ji-hua">读书计划</span><a href="#du-shu-ji-hua" class="header-anchor">#</a></h3><ul>
-<li><input checked disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/26356948/" target="_blank" rel="noopener">摆渡人</a></li>
-</ul>
-<ul>
-<li><input checked disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/26877752/" target="_blank" rel="noopener">恶意</a></li>
-</ul>
-<ul>
-<li><input disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/34434309/" target="_blank" rel="noopener">82年生的金智英</a></li>
-</ul>
-<ul>
-<li><input disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/27061123/" target="_blank" rel="noopener">MongoDB实战(第二版)</a></li>
-</ul>
-<ul>
-<li><input disabled type="checkbox"> ​     <a href="https://book.douban.com/subject/25768396/" target="_blank" rel="noopener">深入浅出Node.js</a></li>
-</ul>
-<h3><span id="guan-ying-ji-hua">观影计划</span><a href="#guan-ying-ji-hua" class="header-anchor">#</a></h3><ul>
-<li><input checked disabled type="checkbox"> ​      <a href="https://open.163.com/ted/" target="_blank" rel="noopener">网易公开课TED</a></li>
-</ul>
-<h3><span id="xue-xi-ji-hua">学习计划</span><a href="#xue-xi-ji-hua" class="header-anchor">#</a></h3><ul>
-<li><input checked disabled type="checkbox"> ​      <a href="https://www.typescriptlang.org/docs/home.html" target="_blank" rel="noopener">TypeScript</a></li>
-</ul>
-<ul>
-<li><input checked disabled type="checkbox"> ​      <a href="http://expressjs.com/" target="_blank" rel="noopener">Express</a></li>
-</ul>
-<ul>
-<li><input checked disabled type="checkbox"> ​      <a href="https://eggjs.org/zh-cn/intro/quickstart.html" target="_blank" rel="noopener">Egg</a></li>
-</ul>
-<ul>
-<li><input checked disabled type="checkbox"> ​      <a href="https://docs.nestjs.com/" target="_blank" rel="noopener">nestjs</a></li>
-</ul>
-<ul>
-<li><input checked disabled type="checkbox"> ​      <a href="https://time.geekbang.org/column/intro/140?utm_source=pinpaizhuanqu&utm_medium=geektime&utm_campaign=guanwang&utm_term=guanwang&utm_content=0511" target="_blank" rel="noopener">Linux 性能优化实战</a></li>
-</ul>
-<h3><span id="bo-ke-ji-hua">博客计划</span><a href="#bo-ke-ji-hua" class="header-anchor">#</a></h3><p>​       技术分享 * 50</p>
-<p>​       leetcode * 50</p>
-<p>​       其他博客 * 10</p>
-]]></content>
-      <categories>
-        <category>规划</category>
-      </categories>
-      <tags>
-        <tag>规划</tag>
       </tags>
   </entry>
   <entry>
@@ -289,6 +274,21 @@
       </categories>
       <tags>
         <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>最大余额法解决百分比和不是百分百的问题</title>
+    <url>/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3><span id="chang-jing">场景</span><a href="#chang-jing" class="header-anchor">#</a></h3><p>我们经常在画百分比图表时候，直接四舍五入会出现相加不等于100%，最大余额法解决百分比和不是100%的问题。</p>
+<h3><span id="zen-me-bao-zheng-suo-you-zhan-bi-zhi-he-deng-yu-100">怎么保证所有占比之和等于100%</span><a href="#zen-me-bao-zheng-suo-you-zhan-bi-zhi-he-deng-yu-100" class="header-anchor">#</a></h3><p>echarts的饼图的百度通过传入数据自动算出每个项在总数当中所占的比例大小，且保证所有的比率相加等于100%，那他是如何计算百分比的呢。通过阅读<a href="https://github.com/apache/echarts/blob/master/src/util/number.ts" target="_blank" rel="noopener">源码</a>我们可以得知他使用最大余额法。</p>
+<h3><span id="dai-ma">代码</span><a href="#dai-ma" class="header-anchor">#</a></h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">3</span>, <span class="number">3</span>, <span class="number">8</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> aPercentage = getPercentValue(arr, <span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> bPercentage = getPercentValue(arr, <span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> cPercentage = getPercentValue(arr, <span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> percentageSum = aPercentage + bPercentage + cPercentage;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'get percentage'</span>, aPercentage, bPercentage, cPercentage, percentageSum);</span><br><span class="line"></span><br><span class="line"><span class="comment">//最大余额法解决百分比和不是100%的问题</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPercentValue</span>(<span class="params">arrList, index, precision</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!arrList[index]) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!precision) precision = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">let</span> sum = arrList.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val);</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">if</span> (sum === <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> digits = <span class="built_in">Math</span>.pow(<span class="number">10</span>, precision);</span><br><span class="line">    <span class="keyword">let</span> votesPerQuota = arrList.map(<span class="function">(<span class="params">val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val) / sum * digits * <span class="number">100</span>;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> targetSeats = digits * <span class="number">100</span>;</span><br><span class="line">    <span class="keyword">let</span> seats = votesPerQuota.map(<span class="function">(<span class="params">votes</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Math</span>.floor(votes);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> currentSum = seats.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + val;</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">let</span> remainder = votesPerQuota.map(<span class="function"><span class="keyword">function</span> (<span class="params">votes, index</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> votes - seats[index];</span><br><span class="line">    &#125;);</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">while</span> (currentSum &lt; targetSeats) &#123;</span><br><span class="line">        <span class="keyword">let</span> max = <span class="built_in">Number</span>.NEGATIVE_INFINITY;</span><br><span class="line">        <span class="keyword">let</span> maxId = <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = remainder.length; i &lt; len; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (remainder[i] &gt; max) &#123;</span><br><span class="line">                max = remainder[i];</span><br><span class="line">                maxId = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ++seats[maxId];</span><br><span class="line">        remainder[maxId] = <span class="number">0</span>;</span><br><span class="line">        ++currentSum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> seats[index] / digits;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
       </tags>
   </entry>
 </search>
