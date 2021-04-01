@@ -1,26 +1,89 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
 
-  <meta name="description" content="96后的成长历程印记">
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="周轩衔的博客小屋" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="96后的成长历程印记">
 <meta property="og:type" content="website">
 <meta property="og:title" content="周轩衔的博客小屋">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -29,18 +92,39 @@
 <meta property="article:author" content="周轩衔">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-Hans'
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
   };
 </script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
 
   <title>周轩衔的博客小屋</title>
   
@@ -50,144 +134,187 @@
 
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+<meta name="generator" content="Hexo 4.2.1"></head>
 
-<link rel="alternate" href="/atom.xml" title="周轩衔的博客小屋" type="application/atom+xml">
-</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">周轩衔的博客小屋</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">周轩衔的博客小屋</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
 </div>
 
-
-
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
         <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Startseite</a>
-
-  </li>
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archiv</a>
+      
+    </ul>
+  
 
-  </li>
-  </ul>
+  
 </nav>
 
 
 
-
-</div>
+ </div>
     </header>
 
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
+    <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
+          <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
       
+
+  
+
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">最大余额法解决百分比和不是百分百的问题</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/" itemprop="url">最大余额法解决百分比和不是百分百的问题</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-01T16:18:03+08:00">
+                2021-04-01
+              </time>
+            
 
-              <time title="Erstellt: 2021-04-01 16:18:03 / Geändert am: 16:41:21" itemprop="dateCreated datePublished" datetime="2021-04-01T16:18:03+08:00">2021-04-01</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index"><span itemprop="name">Node</span></a>
+                  <a href="/categories/Node/" itemprop="url" rel="index">
+                    <span itemprop="name">Node</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -195,70 +322,144 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3><span id="chang-jing">场景</span><a href="#chang-jing" class="header-anchor">#</a></h3><p>我们经常在画百分比图表时候，直接四舍五入会出现相加不等于100%，最大余额法解决百分比和不是100%的问题。</p>
+      
+
+      
+        
+          
+            <h3><span id="chang-jing">场景</span><a href="#chang-jing" class="header-anchor">#</a></h3><p>我们经常在画百分比图表时候，直接四舍五入会出现相加不等于100%，最大余额法解决百分比和不是100%的问题。</p>
 <h3><span id="zen-me-bao-zheng-suo-you-zhan-bi-zhi-he-deng-yu-100">怎么保证所有占比之和等于100%</span><a href="#zen-me-bao-zheng-suo-you-zhan-bi-zhi-he-deng-yu-100" class="header-anchor">#</a></h3><p>echarts的饼图的百度通过传入数据自动算出每个项在总数当中所占的比例大小，且保证所有的比率相加等于100%，那他是如何计算百分比的呢。通过阅读<a href="https://github.com/apache/echarts/blob/master/src/util/number.ts" target="_blank" rel="noopener">源码</a>我们可以得知他使用最大余额法。</p>
 <h3><span id="dai-ma">代码</span><a href="#dai-ma" class="header-anchor">#</a></h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">3</span>, <span class="number">3</span>, <span class="number">8</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> aPercentage = getPercentValue(arr, <span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> bPercentage = getPercentValue(arr, <span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> cPercentage = getPercentValue(arr, <span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> percentageSum = aPercentage + bPercentage + cPercentage;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'get percentage'</span>, aPercentage, bPercentage, cPercentage, percentageSum);</span><br><span class="line"></span><br><span class="line"><span class="comment">//最大余额法解决百分比和不是100%的问题</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPercentValue</span>(<span class="params">arrList, index, precision</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!arrList[index]) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!precision) precision = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">let</span> sum = arrList.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val);</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">if</span> (sum === <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> digits = <span class="built_in">Math</span>.pow(<span class="number">10</span>, precision);</span><br><span class="line">    <span class="keyword">let</span> votesPerQuota = arrList.map(<span class="function">(<span class="params">val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val) / sum * digits * <span class="number">100</span>;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> targetSeats = digits * <span class="number">100</span>;</span><br><span class="line">    <span class="keyword">let</span> seats = votesPerQuota.map(<span class="function">(<span class="params">votes</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Math</span>.floor(votes);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> currentSum = seats.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + val;</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">let</span> remainder = votesPerQuota.map(<span class="function"><span class="keyword">function</span> (<span class="params">votes, index</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> votes - seats[index];</span><br><span class="line">    &#125;);</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">while</span> (currentSum &lt; targetSeats) &#123;</span><br><span class="line">        <span class="keyword">let</span> max = <span class="built_in">Number</span>.NEGATIVE_INFINITY;</span><br><span class="line">        <span class="keyword">let</span> maxId = <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = remainder.length; i &lt; len; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (remainder[i] &gt; max) &#123;</span><br><span class="line">                max = remainder[i];</span><br><span class="line">                maxId = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ++seats[maxId];</span><br><span class="line">        remainder[maxId] = <span class="number">0</span>;</span><br><span class="line">        ++currentSum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> seats[index] / digits;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/03/24/docker%20mongo%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/24/docker%20mongo%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/" class="post-title-link" itemprop="url">docker mongo数据的备份与恢复</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/03/24/docker%20mongo%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/" itemprop="url">docker mongo数据的备份与恢复</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
               
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-03-24T18:18:03+08:00">
+                2021-03-24
+              </time>
+            
 
-              <time title="Erstellt: 2021-03-24 18:18:03 / Geändert am: 18:25:38" itemprop="dateCreated datePublished" datetime="2021-03-24T18:18:03+08:00">2021-03-24</time>
-            </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mongodb/" itemprop="url" rel="index"><span itemprop="name">mongodb</span></a>
+                  <a href="/categories/mongodb/" itemprop="url" rel="index">
+                    <span itemprop="name">mongodb</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -266,7 +467,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
+      
+
+      
+        
+          
+            <ol>
 <li><p>进入docker mongo容器 bash</p>
 <p><code>docker exec -it mongo_server bash</code></p>
 </li>
@@ -284,71 +490,134 @@
 </li>
 </ol>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/22/nodejs%E5%88%B7%E4%B8%8A%E5%8D%83%E4%B8%87%E6%95%B0%E6%8D%AE%E9%87%8F%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/22/nodejs%E5%88%B7%E4%B8%8A%E5%8D%83%E4%B8%87%E6%95%B0%E6%8D%AE%E9%87%8F%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81/" class="post-title-link" itemprop="url">nodejs刷上千万数据量脚本代码</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/01/22/nodejs%E5%88%B7%E4%B8%8A%E5%8D%83%E4%B8%87%E6%95%B0%E6%8D%AE%E9%87%8F%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81/" itemprop="url">nodejs刷上千万数据量脚本代码</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-22T15:45:12+08:00">
+                2021-01-22
+              </time>
+            
 
-              <time title="Erstellt: 2021-01-22 15:45:12" itemprop="dateCreated datePublished" datetime="2021-01-22T15:45:12+08:00">2021-01-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-30 14:05:25" itemprop="dateModified" datetime="2021-03-30T14:05:25+08:00">2021-03-30</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index"><span itemprop="name">Node</span></a>
+                  <a href="/categories/Node/" itemprop="url" rel="index">
+                    <span itemprop="name">Node</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -356,73 +625,139 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>​        很多时候我们需要处理上千万的数据问题，比如数据统计分析、报表处理、数据迁移、数据清洗等等应用场景，以下的代码是使用typescript编写的一个高性能脚本，以mongoDB的主键id索引不断读取数据。</p>
+      
+
+      
+        
+          
+            <p>​        很多时候我们需要处理上千万的数据问题，比如数据统计分析、报表处理、数据迁移、数据清洗等等应用场景，以下的代码是使用typescript编写的一个高性能脚本，以mongoDB的主键id索引不断读取数据。</p>
 <figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; connect, ObjectId, Db &#125; <span class="keyword">from</span> <span class="string">'mongodb'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; find, hasIn, isEmpty, omit &#125; <span class="keyword">from</span> <span class="string">'lodash'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> HFS_DB_URI = process.env.HFS_DB || <span class="string">''</span>;</span><br><span class="line"><span class="keyword">const</span> SXB_DB_URI = process.env.SXB_DB || <span class="string">''</span>;</span><br><span class="line"><span class="keyword">let</span> HfsDb: Db, SxbDb: Db;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> WxUserCollection: <span class="built_in">string</span> = <span class="string">'@WxUser'</span>;</span><br><span class="line"><span class="keyword">const</span> WxUserMemberCollection: <span class="built_in">string</span> = <span class="string">'@WxUserMember'</span>;</span><br><span class="line"><span class="keyword">const</span> HfsUserCollection: <span class="built_in">string</span> = <span class="string">'@User'</span>;</span><br><span class="line"><span class="keyword">const</span> HfsUserExtendCollection: <span class="built_in">string</span> = <span class="string">'@UserExtend'</span>;</span><br><span class="line"><span class="keyword">const</span> HfsStudentExtendCollection: <span class="built_in">string</span> = <span class="string">'@StudentExtend'</span>;</span><br><span class="line"><span class="keyword">const</span> limit: <span class="built_in">number</span> = <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getSxbWxUserMemberFromHfsDb</span>(<span class="params">sxbUsers: SxbUser[]</span>): <span class="title">Promise</span>&lt;</span>&#123; wxUserMembers: WxUserMember[], sxbUserExtends: HfsUserExtend[] &#125;&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> wxUserMembers: WxUserMember[] = [], sxbUserExtends: HfsUserExtend[] = [];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> hfsUserIds: <span class="built_in">any</span>[] = sxbUsers.filter(<span class="function"><span class="params">u</span> =&gt;</span> hasIn(u, <span class="string">'hfs_id'</span>) &amp;&amp; u.hfs_id.length &gt;= <span class="number">12</span> &amp;&amp; u.hfs_id.length &lt;= <span class="number">24</span>).map(<span class="function"><span class="params">u</span> =&gt;</span> <span class="keyword">new</span> ObjectId(u.hfs_id));</span><br><span class="line">    <span class="comment">// userId =&gt; studentId</span></span><br><span class="line">    <span class="keyword">const</span> HfsUsers: HfsUser[] = (<span class="keyword">await</span> HfsDb.collection(HfsUserCollection)</span><br><span class="line">        .find(&#123; _id: &#123; $<span class="keyword">in</span>: hfsUserIds &#125; &#125;, &#123; projection: &#123; <span class="string">'[~student]'</span>: <span class="number">1</span>, <span class="string">'[student]'</span>: <span class="number">1</span> &#125; &#125;)</span><br><span class="line">        .toArray())</span><br><span class="line">        .filter(<span class="function"><span class="params">d</span> =&gt;</span> hasIn(d, <span class="string">'[~student]'</span>) || hasIn(d, <span class="string">'[student]'</span>)).map(<span class="function"><span class="params">d</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">const</span> item = (&#123; _id: <span class="string">`<span class="subst">$&#123;d._id&#125;</span>`</span>, studentId: (d[<span class="string">'[student]'</span>] ? d[<span class="string">'[student]'</span>] : d[<span class="string">'[~student]'</span>])[<span class="number">0</span>].peer &#125;);</span><br><span class="line">            <span class="keyword">return</span> item;</span><br><span class="line">        &#125;);</span><br><span class="line">    <span class="keyword">const</span> HfsUserExtends: HfsUserExtend[] = <span class="keyword">await</span> HfsDb.collection(HfsUserExtendCollection)</span><br><span class="line">        .find(&#123; _id: &#123; $<span class="keyword">in</span>: hfsUserIds &#125; &#125;, &#123; projection: &#123; province_id: <span class="number">1</span>, province: <span class="number">1</span>, start_year: <span class="number">1</span>, is_han: <span class="number">1</span>, high_school: <span class="number">1</span> &#125; &#125;)</span><br><span class="line">        .toArray();</span><br><span class="line">    <span class="keyword">const</span> studentIds: ObjectId[] = HfsUsers.map(<span class="function"><span class="params">s</span> =&gt;</span> s.studentId);</span><br><span class="line">    <span class="comment">// studentId =&gt; [shengya_member]</span></span><br><span class="line">    <span class="keyword">const</span> studentExtends: HfsStudentExtend[] = (<span class="keyword">await</span> HfsDb.collection(HfsStudentExtendCollection)</span><br><span class="line">        .find(&#123; _id: &#123; $<span class="keyword">in</span>: studentIds &#125; &#125;, &#123; projection: &#123; <span class="string">'[shengya_member]'</span>: <span class="number">1</span> &#125; &#125;)</span><br><span class="line">        .toArray())</span><br><span class="line">        .filter(<span class="function"><span class="params">d</span> =&gt;</span> hasIn(d, <span class="string">'[shengya_member]'</span>));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> &#123; _id, hfs_id &#125; of sxbUsers) &#123;</span><br><span class="line">        <span class="keyword">const</span> hfsUser: HfsUser | <span class="literal">undefined</span> = find(HfsUsers, <span class="function"><span class="params">u</span> =&gt;</span> <span class="string">`<span class="subst">$&#123;u._id&#125;</span>`</span> === <span class="string">`<span class="subst">$&#123;hfs_id&#125;</span>`</span>);</span><br><span class="line">        <span class="keyword">if</span> (hfsUser) &#123;</span><br><span class="line">            <span class="keyword">const</span> studentExtend: HfsStudentExtend | <span class="literal">undefined</span> = find(studentExtends, <span class="function"><span class="params">s</span> =&gt;</span> <span class="string">`<span class="subst">$&#123;s._id&#125;</span>`</span> === <span class="string">`<span class="subst">$&#123;hfsUser.studentId&#125;</span>`</span>);</span><br><span class="line">            <span class="keyword">if</span> (studentExtend) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">let</span> &#123; role, expire, create_time &#125; of studentExtend[<span class="string">'[shengya_member]'</span>]) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (role === <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">                    <span class="keyword">if</span> (role === <span class="number">99</span> &amp;&amp; !expire) expire = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">'2050/1/1'</span>);</span><br><span class="line">                    wxUserMembers.push(<span class="keyword">new</span> WxUserMember(<span class="string">`<span class="subst">$&#123;_id&#125;</span>`</span>, role, expire, create_time));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">const</span> hfsUserExtend: HfsUserExtend = find(HfsUserExtends, <span class="function"><span class="params">ue</span> =&gt;</span> <span class="string">`<span class="subst">$&#123;ue._id&#125;</span>`</span> === hfs_id);</span><br><span class="line">        <span class="keyword">if</span> (hfsUserExtend &amp;&amp; </span><br><span class="line">            (hasIn(hfsUserExtend, <span class="string">'province_id'</span>) || hasIn(hfsUserExtend, <span class="string">'province'</span>) || hasIn(hfsUserExtend, <span class="string">'start_year'</span>) || hasIn(hfsUserExtend, <span class="string">'is_han'</span>) || hasIn(hfsUserExtend, <span class="string">'high_school'</span>))</span><br><span class="line">        ) &#123;</span><br><span class="line">            <span class="keyword">const</span> temp: HfsUserExtend = <span class="built_in">Object</span>.assign(omit(hfsUserExtend, <span class="string">'start_year'</span>), &#123; _id: <span class="keyword">new</span> ObjectId(_id) &#125;);</span><br><span class="line">            hfsUserExtend.start_year &amp;&amp; (temp.year = hfsUserExtend.start_year);</span><br><span class="line">            sxbUserExtends.push(temp);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123; wxUserMembers, sxbUserExtends &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">updateOrInsertMany</span>(<span class="params">wxUserMembers: WxUserMember[]</span>): <span class="title">Promise</span>&lt;</span>&#123; insertedCount: <span class="built_in">number</span>, updatedCount: <span class="built_in">number</span> &#125;&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> insertedCount = <span class="number">0</span>, updatedCount = <span class="number">0</span>, total = wxUserMembers.length, num = limit / <span class="number">2</span>, round = <span class="built_in">Math</span>.ceil(total / num);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= round; i++) &#123;</span><br><span class="line">        <span class="keyword">await</span> <span class="built_in">Promise</span>.all(wxUserMembers.splice(<span class="number">0</span>, num).map(<span class="function"><span class="params">m</span> =&gt;</span> &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> SxbDb.collection(WxUserMemberCollection).findOneAndUpdate(m, &#123; $<span class="keyword">set</span>: m &#125;, &#123; upsert: <span class="literal">true</span>, returnOriginal: <span class="literal">true</span> &#125;).then((<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (result.value) updatedCount += <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> insertedCount += <span class="number">1</span>;</span><br><span class="line">            &#125;))</span><br><span class="line">        &#125;));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123; insertedCount, updatedCount &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">(<span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (!HFS_DB_URI) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'缺少HFS_DB启动参数'</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (!SXB_DB_URI) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'缺少SXB_DB启动参数'</span>);</span><br><span class="line"></span><br><span class="line">        HfsDb = <span class="keyword">await</span> (<span class="keyword">await</span> connect(HFS_DB_URI, &#123; useUnifiedTopology: <span class="literal">true</span> &#125;)).db();</span><br><span class="line">        <span class="built_in">console</span>.info(<span class="string">`connect HFS_DB successfully`</span>);</span><br><span class="line">        SxbDb = <span class="keyword">await</span> (<span class="keyword">await</span> connect(SXB_DB_URI, &#123; useUnifiedTopology: <span class="literal">true</span> &#125;)).db();</span><br><span class="line">        <span class="built_in">console</span>.info(<span class="string">`connect SXB_DB successfully`</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> query = &#123;&#125;;</span><br><span class="line">        <span class="keyword">for</span> (; ;) &#123;</span><br><span class="line">            <span class="comment">// 获取limit个升学宝用户</span></span><br><span class="line">            <span class="keyword">const</span> sxbUsers: SxbUser[] = <span class="keyword">await</span> SxbDb.collection(WxUserCollection).find(query, &#123; projection: &#123; hfs_id: <span class="number">1</span> &#125; &#125;).limit(limit).toArray();</span><br><span class="line"></span><br><span class="line">            <span class="built_in">console</span>.time(<span class="string">"********************************** 升学宝从好分数数据库迁移会员 **********************************"</span>);</span><br><span class="line">            <span class="comment">// 获取好分数对应的升学宝会员</span></span><br><span class="line">            <span class="keyword">let</span> &#123;</span><br><span class="line">                wxUserMembers, sxbUserExtends</span><br><span class="line">            &#125; = <span class="keyword">await</span> getSxbWxUserMemberFromHfsDb(sxbUsers);</span><br><span class="line">            <span class="keyword">if</span> (!isEmpty(wxUserMembers)) &#123;</span><br><span class="line">                <span class="keyword">const</span> MODE = process.env.MODE || <span class="string">'u'</span>; <span class="comment">// u = 不存在就添加，存在就更新    i = 直接批量添加</span></span><br><span class="line">                MODE === <span class="string">'i'</span> &amp;&amp; <span class="keyword">await</span> SxbDb.collection(WxUserMemberCollection).insertMany(wxUserMembers).then(<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.info(<span class="string">`增加会员记录: <span class="subst">$&#123;result.insertedCount&#125;</span>`</span>)</span><br><span class="line">                &#125;);</span><br><span class="line"></span><br><span class="line">                MODE === <span class="string">'u'</span> &amp;&amp; <span class="keyword">await</span> updateOrInsertMany(wxUserMembers).then((<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.info(<span class="string">`更新已存在会员记录: <span class="subst">$&#123;result.updatedCount&#125;</span> - 增加会员记录: <span class="subst">$&#123;result.insertedCount&#125;</span>`</span>);</span><br><span class="line">                &#125;));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">console</span>.timeEnd(<span class="string">"********************************** 升学宝从好分数数据库迁移会员 **********************************"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="built_in">console</span>.time(<span class="string">"********************************** 升学宝从好分数数据库迁移用户信息 **********************************"</span>);</span><br><span class="line">            <span class="keyword">if</span> (!isEmpty(sxbUserExtends)) &#123;</span><br><span class="line">                <span class="keyword">let</span> count = <span class="number">0</span>, updates = [];</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">let</span> sxbUserExtend of sxbUserExtends) &#123;</span><br><span class="line">                    updates.push(SxbDb.collection(WxUserCollection).updateOne(&#123; _id: sxbUserExtend._id &#125;, &#123; $<span class="keyword">set</span>: omit(sxbUserExtend, <span class="string">'_id'</span>) &#125;).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">                        count += result.matchedCount;</span><br><span class="line">                    &#125;));</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">await</span> <span class="built_in">Promise</span>.all(updates).catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.error(err);</span><br><span class="line">                    <span class="built_in">console</span>.log(sxbUserExtends);</span><br><span class="line">                &#125;);</span><br><span class="line">                <span class="built_in">console</span>.info(<span class="string">`更新用户信息数: <span class="subst">$&#123;count&#125;</span>`</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">console</span>.timeEnd(<span class="string">"********************************** 升学宝从好分数数据库迁移用户信息 **********************************"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (sxbUsers.length === <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">            query = &#123; _id: &#123; $gt: sxbUsers[sxbUsers.length - <span class="number">1</span>]._id &#125; &#125;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">        <span class="built_in">console</span>.error(err);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        process.exit(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;)()</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> WxUserMember &#123;</span><br><span class="line">    <span class="keyword">constructor</span>(<span class="params"><span class="keyword">private</span> user_id: <span class="built_in">string</span>, <span class="keyword">private</span> role: <span class="built_in">number</span>, <span class="keyword">private</span> expire: <span class="built_in">Date</span> | <span class="built_in">number</span>, <span class="keyword">private</span> create_time: <span class="built_in">Date</span> | <span class="built_in">number</span> = <span class="built_in">Date</span>.now()</span>) &#123; &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> SxbUser &#123;</span><br><span class="line">    _id: ObjectId;</span><br><span class="line">    hfs_id: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> HfsUser &#123;</span><br><span class="line">    _id: <span class="built_in">string</span>;</span><br><span class="line">    studentId: ObjectId;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> HfsUserExtend &#123;</span><br><span class="line">    _id?: ObjectId;</span><br><span class="line">    province_id: <span class="built_in">number</span>;</span><br><span class="line">    province: <span class="built_in">string</span>;</span><br><span class="line">    start_year?: <span class="built_in">number</span>;</span><br><span class="line">    is_han: <span class="built_in">boolean</span>;</span><br><span class="line">    high_school: <span class="built_in">string</span>;</span><br><span class="line">    year: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> HfsStudentExtend &#123;</span><br><span class="line">    _id: ObjectId,</span><br><span class="line">    <span class="string">'[shengya_member]'</span>: &#123;</span><br><span class="line">        role: <span class="built_in">number</span>,</span><br><span class="line">        expire: <span class="built_in">Date</span>,</span><br><span class="line">        create_time: <span class="built_in">Date</span></span><br><span class="line">    &#125;[]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/22/2021%E5%8A%A0%E6%B2%B9%E5%90%A7-%E6%89%93%E5%B7%A5%E4%BA%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/22/2021%E5%8A%A0%E6%B2%B9%E5%90%A7-%E6%89%93%E5%B7%A5%E4%BA%BA/" class="post-title-link" itemprop="url">2021加油吧,打工人</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/01/22/2021%E5%8A%A0%E6%B2%B9%E5%90%A7-%E6%89%93%E5%B7%A5%E4%BA%BA/" itemprop="url">2021加油吧,打工人</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-22T14:50:48+08:00">
+                2021-01-22
+              </time>
+            
 
-              <time title="Erstellt: 2021-01-22 14:50:48" itemprop="dateCreated datePublished" datetime="2021-01-22T14:50:48+08:00">2021-01-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-24 17:50:38" itemprop="dateModified" datetime="2021-03-24T17:50:38+08:00">2021-03-24</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%A7%84%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">规划</span></a>
+                  <a href="/categories/%E8%A7%84%E5%88%92/" itemprop="url" rel="index">
+                    <span itemprop="name">规划</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -430,74 +765,142 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>​        2020年，充满魔幻的一年如白驹过隙在指缝间溜走了。过去的一年干了很多事情，写了很多代码，也得到了很多人的认可，也错过了很多人和事情，有满足也有缺憾。2021年，我应该怎么样去度过呢？</p>
+      
+
+      
+        
+          
+            <p>​        2020年，充满魔幻的一年如白驹过隙在指缝间溜走了。过去的一年干了很多事情，写了很多代码，也得到了很多人的认可，也错过了很多人和事情，有满足也有缺憾。2021年，我应该怎么样去度过呢？</p>
 <p>​        我给自己定了几件事情：去一趟旅行、每周至少分享一面博客、静下心来专研技术、看几本书……想一想要做的事情挺多，能坚持下来也并不容易，2021年加油吧，打工人！对技术有追求的我，要变得更热爱生活！</p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/10/vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/10/vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/" class="post-title-link" itemprop="url">vscode快捷键</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/10/vscode%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="url">vscode快捷键</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-06-10T17:02:57+08:00">
+                2020-06-10
+              </time>
+            
 
-              <time title="Erstellt: 2020-06-10 17:02:57" itemprop="dateCreated datePublished" datetime="2020-06-10T17:02:57+08:00">2020-06-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-24 17:50:38" itemprop="dateModified" datetime="2021-03-24T17:50:38+08:00">2021-03-24</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">开发工具</span></a>
+                  <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index">
+                    <span itemprop="name">开发工具</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -505,7 +908,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2><span id="vscode-chang-yong-kuai-jie-jian">vscode 常用快捷键</span><a href="#vscode-chang-yong-kuai-jie-jian" class="header-anchor">#</a></h2><ol>
+      
+
+      
+        
+          
+            <h2><span id="vscode-chang-yong-kuai-jie-jian">vscode 常用快捷键</span><a href="#vscode-chang-yong-kuai-jie-jian" class="header-anchor">#</a></h2><ol>
 <li>跳转到指定行 control + g</li>
 <li>方法前进/后退 control + (+/-)</li>
 <li>打开/关闭终端 control + ~</li>
@@ -541,71 +949,134 @@
 <li>打开快捷键配置项 command + k，不松 command 按 s 或 command + shift + p,输入key，选择响应选项设置</li>
 </ol>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/27/Go%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%92%8C%E7%AC%AC%E4%B8%80%E4%B8%AAhelloWorld_day01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/27/Go%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%92%8C%E7%AC%AC%E4%B8%80%E4%B8%AAhelloWorld_day01/" class="post-title-link" itemprop="url">Go学习之环境安装和第一个helloWorld_day01</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/27/Go%E5%AD%A6%E4%B9%A0%E4%B9%8B%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%92%8C%E7%AC%AC%E4%B8%80%E4%B8%AAhelloWorld_day01/" itemprop="url">Go学习之环境安装和第一个helloWorld_day01</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-27T18:07:55+08:00">
+                2020-05-27
+              </time>
+            
 
-              <time title="Erstellt: 2020-05-27 18:07:55" itemprop="dateCreated datePublished" datetime="2020-05-27T18:07:55+08:00">2020-05-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-24 17:50:38" itemprop="dateModified" datetime="2021-03-24T17:50:38+08:00">2021-03-24</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Go/" itemprop="url" rel="index"><span itemprop="name">Go</span></a>
+                  <a href="/categories/Go/" itemprop="url" rel="index">
+                    <span itemprop="name">Go</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -613,7 +1084,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ol>
+      
+
+      
+        
+          
+            <ol>
 <li>Go 语言环境安装</li>
 </ol>
 <ol start="2">
@@ -656,71 +1132,134 @@
 </li>
 </ol>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/" class="post-title-link" itemprop="url">Node在密集型计算时候eventLoop堵塞</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/" itemprop="url">Node在密集型计算时候eventLoop堵塞</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-12T16:20:39+08:00">
+                2020-05-12
+              </time>
+            
 
-              <time title="Erstellt: 2020-05-12 16:20:39" itemprop="dateCreated datePublished" datetime="2020-05-12T16:20:39+08:00">2020-05-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-24 17:50:38" itemprop="dateModified" datetime="2021-03-24T17:50:38+08:00">2021-03-24</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index"><span itemprop="name">Node</span></a>
+                  <a href="/categories/Node/" itemprop="url" rel="index">
+                    <span itemprop="name">Node</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -728,72 +1267,140 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2><span id="node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai">Node在密集型计算时候eventLoop堵塞</span><a href="#node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai" class="header-anchor">#</a></h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> moment = <span class="built_in">require</span>(<span class="string">'moment'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' begin'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout1'</span>);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 模拟计算密集</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000000</span> ; ++i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span> ; j &lt; <span class="number">100000</span> ; ++j);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' end'</span>);</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm begin</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm end</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm timeout1</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:15:02 pm timeout2  //注意这里的时间晚了好久</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+      
+
+      
+        
+          
+            <h2><span id="node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai">Node在密集型计算时候eventLoop堵塞</span><a href="#node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai" class="header-anchor">#</a></h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> moment = <span class="built_in">require</span>(<span class="string">'moment'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' begin'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout1'</span>);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 模拟计算密集</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000000</span> ; ++i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span> ; j &lt; <span class="number">100000</span> ; ++j);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' end'</span>);</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm begin</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm end</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm timeout1</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:15:02 pm timeout2  //注意这里的时间晚了好久</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">oracle实现流水号定时重置的问题</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/" itemprop="url">oracle实现流水号定时重置的问题</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-10T23:43:51+08:00">
+                2020-05-10
+              </time>
+            
 
-              <time title="Erstellt: 2020-05-10 23:43:51" itemprop="dateCreated datePublished" datetime="2020-05-10T23:43:51+08:00">2020-05-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-24 17:50:38" itemprop="dateModified" datetime="2021-03-24T17:50:38+08:00">2021-03-24</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Database/" itemprop="url" rel="index"><span itemprop="name">Database</span></a>
+                  <a href="/categories/Database/" itemprop="url" rel="index">
+                    <span itemprop="name">Database</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -801,7 +1408,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50206265f4989?w=600&h=450&f=png&s=288572" alt></p>
+      
+
+      
+        
+          
+            <p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50206265f4989?w=600&h=450&f=png&s=288572" alt></p>
 <h1><span id="shu-li">梳理</span><a href="#shu-li" class="header-anchor">#</a></h1><p>流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。</p>
 <h1><span id="cun-chu-guo-cheng">存储过程</span><a href="#cun-chu-guo-cheng" class="header-anchor">#</a></h1><p>入参 V_SEQNAME 是传递要重置的序列</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as</span><br><span class="line">  N    number(10);</span><br><span class="line">  TSQL varchar2(100);</span><br><span class="line">begin</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  N    :&#x3D; -N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by &#39; || N;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by 1&#39;;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">end SEQ_RESET;</span><br></pre></td></tr></table></figure>
@@ -810,71 +1422,134 @@
 <h1><span id="ding-shi-ren-wu">定时任务</span><a href="#ding-shi-ren-wu" class="header-anchor">#</a></h1><p>新建一个定时任务，控制好要重置的时间，可以每时每天每个月等等执行重置的存储过程，达到重置序列的目的，VINDA_SEQ为序列表。<br><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c5011562dcee00?w=1120&h=483&f=png&s=60804" alt></p>
 <h1><span id="shi-yong">使用</span><a href="#shi-yong" class="header-anchor">#</a></h1><p>在记录的新建的before insert的触发器里面将序列的值写入到记录的字段，<code>select VINDA_SEQ.nextval into nextcode from sys.dual;</code> 赋值给变量nextcode，然后 <code>:new.ATTRIBUTE5:=nextcode;ATTRIBUTE5</code>保存着流水号的值。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">create or replace trigger vinda_prodcheck_info_TRIGER</span><br><span class="line">  before insert on vinda_prodcheck_info   </span><br><span class="line">  for each row</span><br><span class="line">declare</span><br><span class="line">  nextid number;</span><br><span class="line">  nextcode number;</span><br><span class="line">begin</span><br><span class="line">  IF :new.RECORD_ID IS NULL or :new.RECORD_ID&#x3D;0 THEN </span><br><span class="line">    select vinda_prodcheck_info_SEQ.nextval </span><br><span class="line">    into nextid</span><br><span class="line">    from sys.dual;</span><br><span class="line">    select VINDA_SEQ.nextval </span><br><span class="line">    into nextcode</span><br><span class="line">    from sys.dual;</span><br><span class="line">    :new.RECORD_ID:&#x3D;nextid;</span><br><span class="line">    :new.ATTRIBUTE5:&#x3D;nextcode;</span><br><span class="line">  end if;</span><br><span class="line">end vinda_prodcheck_info_TRIGER;</span><br></pre></td></tr></table></figure>
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Git常用命令</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" itemprop="url">Git常用命令</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-10T23:08:26+08:00">
+                2020-05-10
+              </time>
+            
 
-              <time title="Erstellt: 2020-05-10 23:08:26" itemprop="dateCreated datePublished" datetime="2020-05-10T23:08:26+08:00">2020-05-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-24 17:50:38" itemprop="dateModified" datetime="2021-03-24T17:50:38+08:00">2021-03-24</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -882,7 +1557,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2><span id="shi-yong-pin-lu-hen-gao-de-ming-ling">使用频率很高的命令</span><a href="#shi-yong-pin-lu-hen-gao-de-ming-ling" class="header-anchor">#</a></h2><p><strong>拉取远程分支</strong></p>
+      
+
+      
+        
+          
+            <h2><span id="shi-yong-pin-lu-hen-gao-de-ming-ling">使用频率很高的命令</span><a href="#shi-yong-pin-lu-hen-gao-de-ming-ling" class="header-anchor">#</a></h2><p><strong>拉取远程分支</strong></p>
 <p><code>git checkout -b feature-keep-alive remotes/origin/feature-keep-alive</code> </p>
 <p> <strong>查看git状态</strong></p>
 <p><code>git status</code></p>
@@ -900,71 +1580,134 @@
 <p> <strong>删除远程分支</strong></p>
 <p><code>git push origin --delete feature-keep-alive</code></p>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+
+    <footer class="post-footer">
+      
 
       
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/LeetCode-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="96后的成长历程印记">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="周轩衔的博客小屋">
     </span>
+
+    
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/10/LeetCode-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" class="post-title-link" itemprop="url">LeetCode - 两数之和</a>
-        </h2>
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/10/LeetCode-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" itemprop="url">LeetCode - 两数之和</a></h1>
+        
 
         <div class="post-meta">
-            <span class="post-meta-item">
+          <span class="post-time">
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-10T12:47:18+08:00">
+                2020-05-10
+              </time>
+            
 
-              <time title="Erstellt: 2020-05-10 12:47:18" itemprop="dateCreated datePublished" datetime="2020-05-10T12:47:18+08:00">2020-05-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Bearbeitet am</span>
-                <time title="Geändert am: 2021-03-24 17:50:38" itemprop="dateModified" datetime="2021-03-24T17:50:38+08:00">2021-03-24</time>
-              </span>
-            <span class="post-meta-item">
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
+                <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a>
+                  <a href="/categories/LeetCode/" itemprop="url" rel="index">
+                    <span itemprop="name">LeetCode</span>
+                  </a>
                 </span>
+
+                
+                
+              
             </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
 
           
 
         </div>
       </header>
+    
 
     
     
@@ -972,31 +1715,57 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
+      
+
+      
+        
+          
+            <p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
 <p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。</p>
 <p><strong>示例:</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9</span><br><span class="line">因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>, len = nums.length; i &lt; len; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> j = i + <span class="number">1</span>, len = nums.length; j &lt; len; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (target === (nums[i] + nums[j]))</span><br><span class="line">                <span class="keyword">return</span> [i, j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">twoSum([<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>], <span class="number">26</span>);</span><br></pre></td></tr></table></figure>
 
+          
+        
       
     </div>
+    
+    
+    
 
     
+
     
+
     
-      <footer class="post-footer">
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
         <div class="post-eof"></div>
-      </footer>
+      
+    </footer>
+  </div>
+  
+  
+  
   </article>
-  
-  
-  
 
+
+    
+  </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Nächste Seite"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
   </nav>
 
 
@@ -1004,110 +1773,132 @@
           </div>
           
 
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+
+          
 
         </div>
+        
           
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
 
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
-        </li>
-        <li class="sidebar-nav-overview">
-          Übersicht
-        </li>
-      </ul>
+      
 
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
+      
 
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">周轩衔</p>
-  <div class="site-description" itemprop="description">96后的成长历程印记</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">11</span>
-          <span class="site-state-item-name">Artikel</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-        <span class="site-state-item-count">8</span>
-        <span class="site-state-item-name">Kategorien</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-        <span class="site-state-item-count">9</span>
-        <span class="site-state-item-name">schlagwörter</span></a>
-      </div>
-  </nav>
-</div>
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">周轩衔</p>
+              <p class="site-description motion-element" itemprop="description">96后的成长历程印记</p>
+          </div>
 
+          <nav class="site-state motion-element">
 
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
 
-      </div>
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
 
     </div>
   </aside>
-  <div id="sidebar-dimmer"></div>
 
 
+        
       </div>
     </main>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">周轩衔</span>
+
+  
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
 
         
 
@@ -1117,25 +1908,33 @@
 
 
 
-
+        
       </div>
     </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
   </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
-<script src="/js/next-boot.js"></script>
+
+
+
 
 
 
@@ -1153,8 +1952,107 @@
 
 
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
 
 
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
 
   
 
