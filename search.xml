@@ -49,34 +49,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Git常用命令</title>
-    <url>/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h2><span id="shi-yong-pin-lu-hen-gao-de-ming-ling">使用频率很高的命令</span><a href="#shi-yong-pin-lu-hen-gao-de-ming-ling" class="header-anchor">#</a></h2><p><strong>拉取远程分支</strong></p>
-<p><code>git checkout -b feature-keep-alive remotes/origin/feature-keep-alive</code> </p>
-<p> <strong>查看git状态</strong></p>
-<p><code>git status</code></p>
-<p> <strong>暂存文件</strong></p>
-<p><code>git add . / 文件</code>  </p>
-<p><strong>提交代码</strong></p>
-<p><code>git commit -m &#39;提交日志’</code></p>
-<p><strong>推送代码到远程分支</strong></p>
-<p><code>git push origin feature-keep-alive:feature-keep-alive</code></p>
-<p><code>git push origin feature-keep-alive</code></p>
-<p><strong>拉取代码</strong></p>
-<p><code>git fetch</code></p>
-<p><strong>删除本地分支</strong></p>
-<p><code>git branch -D master</code>   </p>
-<p> <strong>删除远程分支</strong></p>
-<p><code>git push origin --delete feature-keep-alive</code></p>
-]]></content>
-      <categories>
-        <category>Git</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2021加油吧,打工人</title>
     <url>/2021/01/22/2021%E5%8A%A0%E6%B2%B9%E5%90%A7-%E6%89%93%E5%B7%A5%E4%BA%BA/</url>
     <content><![CDATA[<p>​        2020年，充满魔幻的一年如白驹过隙在指缝间溜走了。过去的一年干了很多事情，写了很多代码，也得到了很多人的认可，也错过了很多人和事情，有满足也有缺憾。2021年，我应该怎么样去度过呢？</p>
@@ -87,35 +59,6 @@
       </categories>
       <tags>
         <tag>规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>LeetCode - 两数之和</title>
-    <url>/2020/05/10/LeetCode-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
-    <content><![CDATA[<p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9</span><br><span class="line">因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>, len = nums.length; i &lt; len; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> j = i + <span class="number">1</span>, len = nums.length; j &lt; len; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (target === (nums[i] + nums[j]))</span><br><span class="line">                <span class="keyword">return</span> [i, j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">twoSum([<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>], <span class="number">26</span>);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>LeetCode</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-        <tag>LeetCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Node在密集型计算时候eventLoop堵塞</title>
-    <url>/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/</url>
-    <content><![CDATA[<h2><span id="node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai">Node在密集型计算时候eventLoop堵塞</span><a href="#node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai" class="header-anchor">#</a></h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> moment = <span class="built_in">require</span>(<span class="string">'moment'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' begin'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout1'</span>);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 模拟计算密集</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000000</span> ; ++i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span> ; j &lt; <span class="number">100000</span> ; ++j);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' end'</span>);</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm begin</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm end</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm timeout1</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:15:02 pm timeout2  //注意这里的时间晚了好久</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Node</category>
-      </categories>
-      <tags>
-        <tag>Node</tag>
       </tags>
   </entry>
   <entry>
@@ -172,6 +115,63 @@
       </tags>
   </entry>
   <entry>
+    <title>Git常用命令</title>
+    <url>/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h2><span id="shi-yong-pin-lu-hen-gao-de-ming-ling">使用频率很高的命令</span><a href="#shi-yong-pin-lu-hen-gao-de-ming-ling" class="header-anchor">#</a></h2><p><strong>拉取远程分支</strong></p>
+<p><code>git checkout -b feature-keep-alive remotes/origin/feature-keep-alive</code> </p>
+<p> <strong>查看git状态</strong></p>
+<p><code>git status</code></p>
+<p> <strong>暂存文件</strong></p>
+<p><code>git add . / 文件</code>  </p>
+<p><strong>提交代码</strong></p>
+<p><code>git commit -m &#39;提交日志’</code></p>
+<p><strong>推送代码到远程分支</strong></p>
+<p><code>git push origin feature-keep-alive:feature-keep-alive</code></p>
+<p><code>git push origin feature-keep-alive</code></p>
+<p><strong>拉取代码</strong></p>
+<p><code>git fetch</code></p>
+<p><strong>删除本地分支</strong></p>
+<p><code>git branch -D master</code>   </p>
+<p> <strong>删除远程分支</strong></p>
+<p><code>git push origin --delete feature-keep-alive</code></p>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>LeetCode - 两数之和</title>
+    <url>/2020/05/10/LeetCode-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</url>
+    <content><![CDATA[<p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
+<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">给定 nums &#x3D; [2, 7, 11, 15], target &#x3D; 9</span><br><span class="line">因为 nums[0] + nums[1] &#x3D; 2 + 7 &#x3D; 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number[]&#125;</span> <span class="variable">nums</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param <span class="type">&#123;number&#125;</span> <span class="variable">target</span></span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return <span class="type">&#123;number[]&#125;</span></span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>, len = nums.length; i &lt; len; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> j = i + <span class="number">1</span>, len = nums.length; j &lt; len; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (target === (nums[i] + nums[j]))</span><br><span class="line">                <span class="keyword">return</span> [i, j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">twoSum([<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>], <span class="number">26</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>LeetCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node在密集型计算时候eventLoop堵塞</title>
+    <url>/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/</url>
+    <content><![CDATA[<h2><span id="node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai">Node在密集型计算时候eventLoop堵塞</span><a href="#node-zai-mi-ji-xing-ji-suan-shi-hou-eventloop-du-sai" class="header-anchor">#</a></h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> moment = <span class="built_in">require</span>(<span class="string">'moment'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' begin'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout1'</span>);</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 模拟计算密集</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span> ; i &lt; <span class="number">1000000</span> ; ++i)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span> ; j &lt; <span class="number">100000</span> ; ++j);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' timeout2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>) + <span class="string">' end'</span>);</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm begin</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm end</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:13:58 pm timeout1</span></span><br><span class="line"><span class="comment">May 12th 2020, 4:15:02 pm timeout2  //注意这里的时间晚了好久</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Node</category>
+      </categories>
+      <tags>
+        <tag>Node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>docker mongo数据的备份与恢复</title>
     <url>/2021/03/24/docker%20mongo%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/</url>
     <content><![CDATA[<ol>
@@ -209,25 +209,6 @@
       </categories>
       <tags>
         <tag>Node</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>oracle实现流水号定时重置的问题</title>
-    <url>/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50206265f4989?w=600&h=450&f=png&s=288572" alt></p>
-<h1><span id="shu-li">梳理</span><a href="#shu-li" class="header-anchor">#</a></h1><p>流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。</p>
-<h1><span id="cun-chu-guo-cheng">存储过程</span><a href="#cun-chu-guo-cheng" class="header-anchor">#</a></h1><p>入参 V_SEQNAME 是传递要重置的序列</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as</span><br><span class="line">  N    number(10);</span><br><span class="line">  TSQL varchar2(100);</span><br><span class="line">begin</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  N    :&#x3D; -N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by &#39; || N;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by 1&#39;;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">end SEQ_RESET;</span><br></pre></td></tr></table></figure>
-
-<h1><span id="xin-jian-xu-lie-biao">新建序列表</span><a href="#xin-jian-xu-lie-biao" class="header-anchor">#</a></h1><p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50143727909a5?w=1113&h=458&f=png&s=57976" alt></p>
-<h1><span id="ding-shi-ren-wu">定时任务</span><a href="#ding-shi-ren-wu" class="header-anchor">#</a></h1><p>新建一个定时任务，控制好要重置的时间，可以每时每天每个月等等执行重置的存储过程，达到重置序列的目的，VINDA_SEQ为序列表。<br><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c5011562dcee00?w=1120&h=483&f=png&s=60804" alt></p>
-<h1><span id="shi-yong">使用</span><a href="#shi-yong" class="header-anchor">#</a></h1><p>在记录的新建的before insert的触发器里面将序列的值写入到记录的字段，<code>select VINDA_SEQ.nextval into nextcode from sys.dual;</code> 赋值给变量nextcode，然后 <code>:new.ATTRIBUTE5:=nextcode;ATTRIBUTE5</code>保存着流水号的值。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create or replace trigger vinda_prodcheck_info_TRIGER</span><br><span class="line">  before insert on vinda_prodcheck_info   </span><br><span class="line">  for each row</span><br><span class="line">declare</span><br><span class="line">  nextid number;</span><br><span class="line">  nextcode number;</span><br><span class="line">begin</span><br><span class="line">  IF :new.RECORD_ID IS NULL or :new.RECORD_ID&#x3D;0 THEN </span><br><span class="line">    select vinda_prodcheck_info_SEQ.nextval </span><br><span class="line">    into nextid</span><br><span class="line">    from sys.dual;</span><br><span class="line">    select VINDA_SEQ.nextval </span><br><span class="line">    into nextcode</span><br><span class="line">    from sys.dual;</span><br><span class="line">    :new.RECORD_ID:&#x3D;nextid;</span><br><span class="line">    :new.ATTRIBUTE5:&#x3D;nextcode;</span><br><span class="line">  end if;</span><br><span class="line">end vinda_prodcheck_info_TRIGER;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Database</category>
-      </categories>
-      <tags>
-        <tag>oracle</tag>
       </tags>
   </entry>
   <entry>
@@ -274,6 +255,25 @@
       </categories>
       <tags>
         <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>oracle实现流水号定时重置的问题</title>
+    <url>/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50206265f4989?w=600&h=450&f=png&s=288572" alt></p>
+<h1><span id="shu-li">梳理</span><a href="#shu-li" class="header-anchor">#</a></h1><p>流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。</p>
+<h1><span id="cun-chu-guo-cheng">存储过程</span><a href="#cun-chu-guo-cheng" class="header-anchor">#</a></h1><p>入参 V_SEQNAME 是传递要重置的序列</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as</span><br><span class="line">  N    number(10);</span><br><span class="line">  TSQL varchar2(100);</span><br><span class="line">begin</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  N    :&#x3D; -N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by &#39; || N;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by 1&#39;;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">end SEQ_RESET;</span><br></pre></td></tr></table></figure>
+
+<h1><span id="xin-jian-xu-lie-biao">新建序列表</span><a href="#xin-jian-xu-lie-biao" class="header-anchor">#</a></h1><p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50143727909a5?w=1113&h=458&f=png&s=57976" alt></p>
+<h1><span id="ding-shi-ren-wu">定时任务</span><a href="#ding-shi-ren-wu" class="header-anchor">#</a></h1><p>新建一个定时任务，控制好要重置的时间，可以每时每天每个月等等执行重置的存储过程，达到重置序列的目的，VINDA_SEQ为序列表。<br><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c5011562dcee00?w=1120&h=483&f=png&s=60804" alt></p>
+<h1><span id="shi-yong">使用</span><a href="#shi-yong" class="header-anchor">#</a></h1><p>在记录的新建的before insert的触发器里面将序列的值写入到记录的字段，<code>select VINDA_SEQ.nextval into nextcode from sys.dual;</code> 赋值给变量nextcode，然后 <code>:new.ATTRIBUTE5:=nextcode;ATTRIBUTE5</code>保存着流水号的值。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">create or replace trigger vinda_prodcheck_info_TRIGER</span><br><span class="line">  before insert on vinda_prodcheck_info   </span><br><span class="line">  for each row</span><br><span class="line">declare</span><br><span class="line">  nextid number;</span><br><span class="line">  nextcode number;</span><br><span class="line">begin</span><br><span class="line">  IF :new.RECORD_ID IS NULL or :new.RECORD_ID&#x3D;0 THEN </span><br><span class="line">    select vinda_prodcheck_info_SEQ.nextval </span><br><span class="line">    into nextid</span><br><span class="line">    from sys.dual;</span><br><span class="line">    select VINDA_SEQ.nextval </span><br><span class="line">    into nextcode</span><br><span class="line">    from sys.dual;</span><br><span class="line">    :new.RECORD_ID:&#x3D;nextid;</span><br><span class="line">    :new.ATTRIBUTE5:&#x3D;nextcode;</span><br><span class="line">  end if;</span><br><span class="line">end vinda_prodcheck_info_TRIGER;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Database</category>
+      </categories>
+      <tags>
+        <tag>oracle</tag>
       </tags>
   </entry>
   <entry>
