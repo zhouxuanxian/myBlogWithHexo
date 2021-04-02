@@ -245,164 +245,6 @@
   <div id="posts" class="posts-expand">
     
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/01/22/nodejs%E5%88%B7%E4%B8%8A%E5%8D%83%E4%B8%87%E6%95%B0%E6%8D%AE%E9%87%8F%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="周轩衔">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="周轩衔的博客小屋">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">nodejs刷上千万数据量脚本代码</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-01-22T15:45:12+08:00">
-                2021-01-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Node/" itemprop="url" rel="index">
-                    <span itemprop="name">Node</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>​        很多时候我们需要处理上千万的数据问题，比如数据统计分析、报表处理、数据迁移、数据清洗等等应用场景，以下的代码是使用typescript编写的一个高性能脚本，以mongoDB的主键id索引不断读取数据。</p>
-<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; connect, ObjectId, Db &#125; <span class="keyword">from</span> <span class="string">'mongodb'</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; find, hasIn, isEmpty, omit &#125; <span class="keyword">from</span> <span class="string">'lodash'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> HFS_DB_URI = process.env.HFS_DB || <span class="string">''</span>;</span><br><span class="line"><span class="keyword">const</span> SXB_DB_URI = process.env.SXB_DB || <span class="string">''</span>;</span><br><span class="line"><span class="keyword">let</span> HfsDb: Db, SxbDb: Db;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> WxUserCollection: <span class="built_in">string</span> = <span class="string">'@WxUser'</span>;</span><br><span class="line"><span class="keyword">const</span> WxUserMemberCollection: <span class="built_in">string</span> = <span class="string">'@WxUserMember'</span>;</span><br><span class="line"><span class="keyword">const</span> HfsUserCollection: <span class="built_in">string</span> = <span class="string">'@User'</span>;</span><br><span class="line"><span class="keyword">const</span> HfsUserExtendCollection: <span class="built_in">string</span> = <span class="string">'@UserExtend'</span>;</span><br><span class="line"><span class="keyword">const</span> HfsStudentExtendCollection: <span class="built_in">string</span> = <span class="string">'@StudentExtend'</span>;</span><br><span class="line"><span class="keyword">const</span> limit: <span class="built_in">number</span> = <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getSxbWxUserMemberFromHfsDb</span>(<span class="params">sxbUsers: SxbUser[]</span>): <span class="title">Promise</span>&lt;</span>&#123; wxUserMembers: WxUserMember[], sxbUserExtends: HfsUserExtend[] &#125;&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> wxUserMembers: WxUserMember[] = [], sxbUserExtends: HfsUserExtend[] = [];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> hfsUserIds: <span class="built_in">any</span>[] = sxbUsers.filter(<span class="function"><span class="params">u</span> =&gt;</span> hasIn(u, <span class="string">'hfs_id'</span>) &amp;&amp; u.hfs_id.length &gt;= <span class="number">12</span> &amp;&amp; u.hfs_id.length &lt;= <span class="number">24</span>).map(<span class="function"><span class="params">u</span> =&gt;</span> <span class="keyword">new</span> ObjectId(u.hfs_id));</span><br><span class="line">    <span class="comment">// userId =&gt; studentId</span></span><br><span class="line">    <span class="keyword">const</span> HfsUsers: HfsUser[] = (<span class="keyword">await</span> HfsDb.collection(HfsUserCollection)</span><br><span class="line">        .find(&#123; _id: &#123; $<span class="keyword">in</span>: hfsUserIds &#125; &#125;, &#123; projection: &#123; <span class="string">'[~student]'</span>: <span class="number">1</span>, <span class="string">'[student]'</span>: <span class="number">1</span> &#125; &#125;)</span><br><span class="line">        .toArray())</span><br><span class="line">        .filter(<span class="function"><span class="params">d</span> =&gt;</span> hasIn(d, <span class="string">'[~student]'</span>) || hasIn(d, <span class="string">'[student]'</span>)).map(<span class="function"><span class="params">d</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">const</span> item = (&#123; _id: <span class="string">`<span class="subst">$&#123;d._id&#125;</span>`</span>, studentId: (d[<span class="string">'[student]'</span>] ? d[<span class="string">'[student]'</span>] : d[<span class="string">'[~student]'</span>])[<span class="number">0</span>].peer &#125;);</span><br><span class="line">            <span class="keyword">return</span> item;</span><br><span class="line">        &#125;);</span><br><span class="line">    <span class="keyword">const</span> HfsUserExtends: HfsUserExtend[] = <span class="keyword">await</span> HfsDb.collection(HfsUserExtendCollection)</span><br><span class="line">        .find(&#123; _id: &#123; $<span class="keyword">in</span>: hfsUserIds &#125; &#125;, &#123; projection: &#123; province_id: <span class="number">1</span>, province: <span class="number">1</span>, start_year: <span class="number">1</span>, is_han: <span class="number">1</span>, high_school: <span class="number">1</span> &#125; &#125;)</span><br><span class="line">        .toArray();</span><br><span class="line">    <span class="keyword">const</span> studentIds: ObjectId[] = HfsUsers.map(<span class="function"><span class="params">s</span> =&gt;</span> s.studentId);</span><br><span class="line">    <span class="comment">// studentId =&gt; [shengya_member]</span></span><br><span class="line">    <span class="keyword">const</span> studentExtends: HfsStudentExtend[] = (<span class="keyword">await</span> HfsDb.collection(HfsStudentExtendCollection)</span><br><span class="line">        .find(&#123; _id: &#123; $<span class="keyword">in</span>: studentIds &#125; &#125;, &#123; projection: &#123; <span class="string">'[shengya_member]'</span>: <span class="number">1</span> &#125; &#125;)</span><br><span class="line">        .toArray())</span><br><span class="line">        .filter(<span class="function"><span class="params">d</span> =&gt;</span> hasIn(d, <span class="string">'[shengya_member]'</span>));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> &#123; _id, hfs_id &#125; of sxbUsers) &#123;</span><br><span class="line">        <span class="keyword">const</span> hfsUser: HfsUser | <span class="literal">undefined</span> = find(HfsUsers, <span class="function"><span class="params">u</span> =&gt;</span> <span class="string">`<span class="subst">$&#123;u._id&#125;</span>`</span> === <span class="string">`<span class="subst">$&#123;hfs_id&#125;</span>`</span>);</span><br><span class="line">        <span class="keyword">if</span> (hfsUser) &#123;</span><br><span class="line">            <span class="keyword">const</span> studentExtend: HfsStudentExtend | <span class="literal">undefined</span> = find(studentExtends, <span class="function"><span class="params">s</span> =&gt;</span> <span class="string">`<span class="subst">$&#123;s._id&#125;</span>`</span> === <span class="string">`<span class="subst">$&#123;hfsUser.studentId&#125;</span>`</span>);</span><br><span class="line">            <span class="keyword">if</span> (studentExtend) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">let</span> &#123; role, expire, create_time &#125; of studentExtend[<span class="string">'[shengya_member]'</span>]) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (role === <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">                    <span class="keyword">if</span> (role === <span class="number">99</span> &amp;&amp; !expire) expire = <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">'2050/1/1'</span>);</span><br><span class="line">                    wxUserMembers.push(<span class="keyword">new</span> WxUserMember(<span class="string">`<span class="subst">$&#123;_id&#125;</span>`</span>, role, expire, create_time));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">const</span> hfsUserExtend: HfsUserExtend = find(HfsUserExtends, <span class="function"><span class="params">ue</span> =&gt;</span> <span class="string">`<span class="subst">$&#123;ue._id&#125;</span>`</span> === hfs_id);</span><br><span class="line">        <span class="keyword">if</span> (hfsUserExtend &amp;&amp; </span><br><span class="line">            (hasIn(hfsUserExtend, <span class="string">'province_id'</span>) || hasIn(hfsUserExtend, <span class="string">'province'</span>) || hasIn(hfsUserExtend, <span class="string">'start_year'</span>) || hasIn(hfsUserExtend, <span class="string">'is_han'</span>) || hasIn(hfsUserExtend, <span class="string">'high_school'</span>))</span><br><span class="line">        ) &#123;</span><br><span class="line">            <span class="keyword">const</span> temp: HfsUserExtend = <span class="built_in">Object</span>.assign(omit(hfsUserExtend, <span class="string">'start_year'</span>), &#123; _id: <span class="keyword">new</span> ObjectId(_id) &#125;);</span><br><span class="line">            hfsUserExtend.start_year &amp;&amp; (temp.year = hfsUserExtend.start_year);</span><br><span class="line">            sxbUserExtends.push(temp);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> &#123; wxUserMembers, sxbUserExtends &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">updateOrInsertMany</span>(<span class="params">wxUserMembers: WxUserMember[]</span>): <span class="title">Promise</span>&lt;</span>&#123; insertedCount: <span class="built_in">number</span>, updatedCount: <span class="built_in">number</span> &#125;&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> insertedCount = <span class="number">0</span>, updatedCount = <span class="number">0</span>, total = wxUserMembers.length, num = limit / <span class="number">2</span>, round = <span class="built_in">Math</span>.ceil(total / num);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= round; i++) &#123;</span><br><span class="line">        <span class="keyword">await</span> <span class="built_in">Promise</span>.all(wxUserMembers.splice(<span class="number">0</span>, num).map(<span class="function"><span class="params">m</span> =&gt;</span> &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> SxbDb.collection(WxUserMemberCollection).findOneAndUpdate(m, &#123; $<span class="keyword">set</span>: m &#125;, &#123; upsert: <span class="literal">true</span>, returnOriginal: <span class="literal">true</span> &#125;).then((<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (result.value) updatedCount += <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> insertedCount += <span class="number">1</span>;</span><br><span class="line">            &#125;))</span><br><span class="line">        &#125;));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> &#123; insertedCount, updatedCount &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">(<span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (!HFS_DB_URI) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'缺少HFS_DB启动参数'</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (!SXB_DB_URI) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'缺少SXB_DB启动参数'</span>);</span><br><span class="line"></span><br><span class="line">        HfsDb = <span class="keyword">await</span> (<span class="keyword">await</span> connect(HFS_DB_URI, &#123; useUnifiedTopology: <span class="literal">true</span> &#125;)).db();</span><br><span class="line">        <span class="built_in">console</span>.info(<span class="string">`connect HFS_DB successfully`</span>);</span><br><span class="line">        SxbDb = <span class="keyword">await</span> (<span class="keyword">await</span> connect(SXB_DB_URI, &#123; useUnifiedTopology: <span class="literal">true</span> &#125;)).db();</span><br><span class="line">        <span class="built_in">console</span>.info(<span class="string">`connect SXB_DB successfully`</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> query = &#123;&#125;;</span><br><span class="line">        <span class="keyword">for</span> (; ;) &#123;</span><br><span class="line">            <span class="comment">// 获取limit个升学宝用户</span></span><br><span class="line">            <span class="keyword">const</span> sxbUsers: SxbUser[] = <span class="keyword">await</span> SxbDb.collection(WxUserCollection).find(query, &#123; projection: &#123; hfs_id: <span class="number">1</span> &#125; &#125;).limit(limit).toArray();</span><br><span class="line"></span><br><span class="line">            <span class="built_in">console</span>.time(<span class="string">"********************************** 升学宝从好分数数据库迁移会员 **********************************"</span>);</span><br><span class="line">            <span class="comment">// 获取好分数对应的升学宝会员</span></span><br><span class="line">            <span class="keyword">let</span> &#123;</span><br><span class="line">                wxUserMembers, sxbUserExtends</span><br><span class="line">            &#125; = <span class="keyword">await</span> getSxbWxUserMemberFromHfsDb(sxbUsers);</span><br><span class="line">            <span class="keyword">if</span> (!isEmpty(wxUserMembers)) &#123;</span><br><span class="line">                <span class="keyword">const</span> MODE = process.env.MODE || <span class="string">'u'</span>; <span class="comment">// u = 不存在就添加，存在就更新    i = 直接批量添加</span></span><br><span class="line">                MODE === <span class="string">'i'</span> &amp;&amp; <span class="keyword">await</span> SxbDb.collection(WxUserMemberCollection).insertMany(wxUserMembers).then(<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.info(<span class="string">`增加会员记录: <span class="subst">$&#123;result.insertedCount&#125;</span>`</span>)</span><br><span class="line">                &#125;);</span><br><span class="line"></span><br><span class="line">                MODE === <span class="string">'u'</span> &amp;&amp; <span class="keyword">await</span> updateOrInsertMany(wxUserMembers).then((<span class="function"><span class="params">result</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.info(<span class="string">`更新已存在会员记录: <span class="subst">$&#123;result.updatedCount&#125;</span> - 增加会员记录: <span class="subst">$&#123;result.insertedCount&#125;</span>`</span>);</span><br><span class="line">                &#125;));</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">console</span>.timeEnd(<span class="string">"********************************** 升学宝从好分数数据库迁移会员 **********************************"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="built_in">console</span>.time(<span class="string">"********************************** 升学宝从好分数数据库迁移用户信息 **********************************"</span>);</span><br><span class="line">            <span class="keyword">if</span> (!isEmpty(sxbUserExtends)) &#123;</span><br><span class="line">                <span class="keyword">let</span> count = <span class="number">0</span>, updates = [];</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">let</span> sxbUserExtend of sxbUserExtends) &#123;</span><br><span class="line">                    updates.push(SxbDb.collection(WxUserCollection).updateOne(&#123; _id: sxbUserExtend._id &#125;, &#123; $<span class="keyword">set</span>: omit(sxbUserExtend, <span class="string">'_id'</span>) &#125;).then(<span class="function">(<span class="params">result</span>) =&gt;</span> &#123;</span><br><span class="line">                        count += result.matchedCount;</span><br><span class="line">                    &#125;));</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">await</span> <span class="built_in">Promise</span>.all(updates).catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span><br><span class="line">                    <span class="built_in">console</span>.error(err);</span><br><span class="line">                    <span class="built_in">console</span>.log(sxbUserExtends);</span><br><span class="line">                &#125;);</span><br><span class="line">                <span class="built_in">console</span>.info(<span class="string">`更新用户信息数: <span class="subst">$&#123;count&#125;</span>`</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="built_in">console</span>.timeEnd(<span class="string">"********************************** 升学宝从好分数数据库迁移用户信息 **********************************"</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (sxbUsers.length === <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">            query = &#123; _id: &#123; $gt: sxbUsers[sxbUsers.length - <span class="number">1</span>]._id &#125; &#125;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">        <span class="built_in">console</span>.error(err);</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        process.exit(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;)()</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> WxUserMember &#123;</span><br><span class="line">    <span class="keyword">constructor</span>(<span class="params"><span class="keyword">private</span> user_id: <span class="built_in">string</span>, <span class="keyword">private</span> role: <span class="built_in">number</span>, <span class="keyword">private</span> expire: <span class="built_in">Date</span> | <span class="built_in">number</span>, <span class="keyword">private</span> create_time: <span class="built_in">Date</span> | <span class="built_in">number</span> = <span class="built_in">Date</span>.now()</span>) &#123; &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> SxbUser &#123;</span><br><span class="line">    _id: ObjectId;</span><br><span class="line">    hfs_id: <span class="built_in">string</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> HfsUser &#123;</span><br><span class="line">    _id: <span class="built_in">string</span>;</span><br><span class="line">    studentId: ObjectId;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> HfsUserExtend &#123;</span><br><span class="line">    _id?: ObjectId;</span><br><span class="line">    province_id: <span class="built_in">number</span>;</span><br><span class="line">    province: <span class="built_in">string</span>;</span><br><span class="line">    start_year?: <span class="built_in">number</span>;</span><br><span class="line">    is_han: <span class="built_in">boolean</span>;</span><br><span class="line">    high_school: <span class="built_in">string</span>;</span><br><span class="line">    year: <span class="built_in">number</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">interface</span> HfsStudentExtend &#123;</span><br><span class="line">    _id: ObjectId,</span><br><span class="line">    <span class="string">'[shengya_member]'</span>: &#123;</span><br><span class="line">        role: <span class="built_in">number</span>,</span><br><span class="line">        expire: <span class="built_in">Date</span>,</span><br><span class="line">        create_time: <span class="built_in">Date</span></span><br><span class="line">    &#125;[]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Node/" rel="tag"># Node</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2021/01/22/2021%E5%8A%A0%E6%B2%B9%E5%90%A7-%E6%89%93%E5%B7%A5%E4%BA%BA/" rel="next" title="2021加油吧,打工人">
-                <i class="fa fa-chevron-left"></i> 2021加油吧,打工人
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/03/24/docker%20mongo%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/" rel="prev" title="docker mongo数据的备份与恢复">
-                docker mongo数据的备份与恢复 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
 
 
     <div class="post-spread">
@@ -536,18 +378,17 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
-
-
+<div>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv" style='display:none'>
+    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    <span class="post-meta-divider">|</span>
+</span>
+<span id="busuanzi_container_site_uv" style='display:none'>
+    有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+</span>
+</div>
 
         
 
