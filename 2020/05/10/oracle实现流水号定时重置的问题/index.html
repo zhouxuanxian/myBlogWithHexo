@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="梳理#流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。 存储过程#入参 V_SEQNAME 是传递要重置的序列 1234567891011121314create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as  N    number(10);  TSQL">
+<meta name="description" content="梳理流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。 存储过程入参 V_SEQNAME 是传递要重置的序列 1234567891011121314create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as  N    number(10);  TSQL v">
 <meta property="og:type" content="article">
 <meta property="og:title" content="oracle实现流水号定时重置的问题">
 <meta property="og:url" content="http://yoursite.com/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="周轩衔的博客小屋">
-<meta property="og:description" content="梳理#流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。 存储过程#入参 V_SEQNAME 是传递要重置的序列 1234567891011121314create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as  N    number(10);  TSQL">
+<meta property="og:description" content="梳理流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。 存储过程入参 V_SEQNAME 是传递要重置的序列 1234567891011121314create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as  N    number(10);  TSQL v">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/8/2/16c50206265f4989?w=600&h=450&f=png&s=288572">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/8/2/16c50143727909a5?w=1113&h=458&f=png&s=57976">
 <meta property="og:image" content="https://user-gold-cdn.xitu.io/2019/8/2/16c5011562dcee00?w=1120&h=483&f=png&s=60804">
 <meta property="article:published_time" content="2020-05-10T15:43:51.000Z">
-<meta property="article:modified_time" content="2021-03-24T09:50:38.778Z">
+<meta property="article:modified_time" content="2021-04-02T03:26:16.583Z">
 <meta property="article:author" content="周轩衔">
 <meta property="article:tag" content="oracle">
 <meta name="twitter:card" content="summary">
@@ -392,6 +392,8 @@
 <h1><span id="ding-shi-ren-wu">定时任务</span><a href="#ding-shi-ren-wu" class="header-anchor">#</a></h1><p>新建一个定时任务，控制好要重置的时间，可以每时每天每个月等等执行重置的存储过程，达到重置序列的目的，VINDA_SEQ为序列表。<br><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c5011562dcee00?w=1120&h=483&f=png&s=60804" alt></p>
 <h1><span id="shi-yong">使用</span><a href="#shi-yong" class="header-anchor">#</a></h1><p>在记录的新建的before insert的触发器里面将序列的值写入到记录的字段，<code>select VINDA_SEQ.nextval into nextcode from sys.dual;</code> 赋值给变量nextcode，然后 <code>:new.ATTRIBUTE5:=nextcode;ATTRIBUTE5</code>保存着流水号的值。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">create or replace trigger vinda_prodcheck_info_TRIGER</span><br><span class="line">  before insert on vinda_prodcheck_info   </span><br><span class="line">  for each row</span><br><span class="line">declare</span><br><span class="line">  nextid number;</span><br><span class="line">  nextcode number;</span><br><span class="line">begin</span><br><span class="line">  IF :new.RECORD_ID IS NULL or :new.RECORD_ID&#x3D;0 THEN </span><br><span class="line">    select vinda_prodcheck_info_SEQ.nextval </span><br><span class="line">    into nextid</span><br><span class="line">    from sys.dual;</span><br><span class="line">    select VINDA_SEQ.nextval </span><br><span class="line">    into nextcode</span><br><span class="line">    from sys.dual;</span><br><span class="line">    :new.RECORD_ID:&#x3D;nextid;</span><br><span class="line">    :new.ATTRIBUTE5:&#x3D;nextcode;</span><br><span class="line">  end if;</span><br><span class="line">end vinda_prodcheck_info_TRIGER;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
       
     </div>
     
@@ -514,7 +516,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -525,7 +527,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
