@@ -277,6 +277,150 @@
     
       
 
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="周轩衔">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="周轩衔的博客小屋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/" itemprop="url">最大余额法解决百分比和不是百分百的问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-04-01T16:18:03+08:00">
+                2021-04-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Node/" itemprop="url" rel="index">
+                    <span itemprop="name">Node</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><p>我们经常在画百分比图表时候，直接四舍五入会出现相加不等于100%，最大余额法解决百分比和不是100%的问题。</p>
+<h3 id="怎么保证所有占比之和等于100"><a href="#怎么保证所有占比之和等于100" class="headerlink" title="怎么保证所有占比之和等于100%"></a>怎么保证所有占比之和等于100%</h3><p>echarts的饼图的百度通过传入数据自动算出每个项在总数当中所占的比例大小，且保证所有的比率相加等于100%，那他是如何计算百分比的呢。通过阅读<a href="https://github.com/apache/echarts/blob/master/src/util/number.ts" target="_blank" rel="noopener">源码</a>我们可以得知他使用最大余额法。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">3</span>, <span class="number">3</span>, <span class="number">8</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> aPercentage = getPercentValue(arr, <span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> bPercentage = getPercentValue(arr, <span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> cPercentage = getPercentValue(arr, <span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="keyword">let</span> percentageSum = aPercentage + bPercentage + cPercentage;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'get percentage'</span>, aPercentage, bPercentage, cPercentage, percentageSum);</span><br><span class="line"></span><br><span class="line"><span class="comment">//最大余额法解决百分比和不是100%的问题</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getPercentValue</span>(<span class="params">arrList, index, precision</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (!arrList[index]) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!precision) precision = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">let</span> sum = arrList.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val);</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line">    <span class="keyword">if</span> (sum === <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> digits = <span class="built_in">Math</span>.pow(<span class="number">10</span>, precision);</span><br><span class="line">    <span class="keyword">let</span> votesPerQuota = arrList.map(<span class="function">(<span class="params">val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="built_in">isNaN</span>(val) ? <span class="number">0</span> : val) / sum * digits * <span class="number">100</span>;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> targetSeats = digits * <span class="number">100</span>;</span><br><span class="line">    <span class="keyword">let</span> seats = votesPerQuota.map(<span class="function">(<span class="params">votes</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">Math</span>.floor(votes);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> currentSum = seats.reduce(<span class="function">(<span class="params">acc, val</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> acc + val;</span><br><span class="line">    &#125;, <span class="number">0</span>);</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">let</span> remainder = votesPerQuota.map(<span class="function"><span class="keyword">function</span> (<span class="params">votes, index</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> votes - seats[index];</span><br><span class="line">    &#125;);</span><br><span class="line">   </span><br><span class="line">    <span class="keyword">while</span> (currentSum &lt; targetSeats) &#123;</span><br><span class="line">        <span class="keyword">let</span> max = <span class="built_in">Number</span>.NEGATIVE_INFINITY;</span><br><span class="line">        <span class="keyword">let</span> maxId = <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = remainder.length; i &lt; len; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span> (remainder[i] &gt; max) &#123;</span><br><span class="line">                max = remainder[i];</span><br><span class="line">                maxId = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ++seats[maxId];</span><br><span class="line">        remainder[maxId] = <span class="number">0</span>;</span><br><span class="line">        ++currentSum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> seats[index] / digits;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2021/04/01/%E6%9C%80%E5%A4%A7%E4%BD%99%E9%A2%9D%E6%B3%95%E8%A7%A3%E5%86%B3%E7%99%BE%E5%88%86%E6%AF%94%E5%92%8C%E4%B8%8D%E6%98%AF%E7%99%BE%E5%88%86%E7%99%BE%E7%9A%84%E9%97%AE%E9%A2%98/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
 
     
       
@@ -362,8 +506,6 @@
           
 
           
-          
-
           
 
           
@@ -530,8 +672,6 @@
 
           
 
-          
-
         </div>
       </header>
     
@@ -664,8 +804,6 @@
           
 
           
-          
-
           
 
           
@@ -809,8 +947,6 @@
           
 
           
-          
-
           
 
           
@@ -987,8 +1123,6 @@
           
 
           
-          
-
           
 
           
@@ -1180,8 +1314,6 @@
 
           
 
-          
-
         </div>
       </header>
     
@@ -1315,8 +1447,6 @@
           
 
           
-          
-
           
 
           
@@ -1466,8 +1596,6 @@
           
 
           
-          
-
           
 
           
@@ -1626,8 +1754,6 @@
           
 
           
-          
-
           
 
           

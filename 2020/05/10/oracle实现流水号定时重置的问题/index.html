@@ -283,6 +283,171 @@
   <div id="posts" class="posts-expand">
     
 
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/10/oracle%E5%AE%9E%E7%8E%B0%E6%B5%81%E6%B0%B4%E5%8F%B7%E5%AE%9A%E6%97%B6%E9%87%8D%E7%BD%AE%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="周轩衔">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="周轩衔的博客小屋">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">oracle实现流水号定时重置的问题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-10T23:43:51+08:00">
+                2020-05-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Database/" itemprop="url" rel="index">
+                    <span itemprop="name">Database</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50206265f4989?w=600&h=450&f=png&s=288572" alt></p>
+<h1><span id="shu-li">梳理</span><a href="#shu-li" class="header-anchor">#</a></h1><p>流水号的递增是我们在开发中经常会遇到的问题，我们可以通过序列实现。通过定时任务执行存储过程定时去重置序列的起始数字以及增量的值。</p>
+<h1><span id="cun-chu-guo-cheng">存储过程</span><a href="#cun-chu-guo-cheng" class="header-anchor">#</a></h1><p>入参 V_SEQNAME 是传递要重置的序列</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">create or replace procedure SEQ_RESET(V_SEQNAME varchar2) as</span><br><span class="line">  N    number(10);</span><br><span class="line">  TSQL varchar2(100);</span><br><span class="line">begin</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  N    :&#x3D; -N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by &#39; || N;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">  execute immediate &#39;select &#39; || V_SEQNAME || &#39;.nextval from dual&#39;</span><br><span class="line">    into N;</span><br><span class="line">  TSQL :&#x3D; &#39;alter sequence &#39; || V_SEQNAME || &#39; increment by 1&#39;;</span><br><span class="line">  execute immediate TSQL;</span><br><span class="line">end SEQ_RESET;</span><br></pre></td></tr></table></figure>
+
+<h1><span id="xin-jian-xu-lie-biao">新建序列表</span><a href="#xin-jian-xu-lie-biao" class="header-anchor">#</a></h1><p><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c50143727909a5?w=1113&h=458&f=png&s=57976" alt></p>
+<h1><span id="ding-shi-ren-wu">定时任务</span><a href="#ding-shi-ren-wu" class="header-anchor">#</a></h1><p>新建一个定时任务，控制好要重置的时间，可以每时每天每个月等等执行重置的存储过程，达到重置序列的目的，VINDA_SEQ为序列表。<br><img src="https://user-gold-cdn.xitu.io/2019/8/2/16c5011562dcee00?w=1120&h=483&f=png&s=60804" alt></p>
+<h1><span id="shi-yong">使用</span><a href="#shi-yong" class="header-anchor">#</a></h1><p>在记录的新建的before insert的触发器里面将序列的值写入到记录的字段，<code>select VINDA_SEQ.nextval into nextcode from sys.dual;</code> 赋值给变量nextcode，然后 <code>:new.ATTRIBUTE5:=nextcode;ATTRIBUTE5</code>保存着流水号的值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">create or replace trigger vinda_prodcheck_info_TRIGER</span><br><span class="line">  before insert on vinda_prodcheck_info   </span><br><span class="line">  for each row</span><br><span class="line">declare</span><br><span class="line">  nextid number;</span><br><span class="line">  nextcode number;</span><br><span class="line">begin</span><br><span class="line">  IF :new.RECORD_ID IS NULL or :new.RECORD_ID&#x3D;0 THEN </span><br><span class="line">    select vinda_prodcheck_info_SEQ.nextval </span><br><span class="line">    into nextid</span><br><span class="line">    from sys.dual;</span><br><span class="line">    select VINDA_SEQ.nextval </span><br><span class="line">    into nextcode</span><br><span class="line">    from sys.dual;</span><br><span class="line">    :new.RECORD_ID:&#x3D;nextid;</span><br><span class="line">    :new.ATTRIBUTE5:&#x3D;nextcode;</span><br><span class="line">  end if;</span><br><span class="line">end vinda_prodcheck_info_TRIGER;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/oracle/" rel="tag"># oracle</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="next" title="Git常用命令">
+                <i class="fa fa-chevron-left"></i> Git常用命令
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/05/12/Node%E5%9C%A8%E5%AF%86%E9%9B%86%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%97%B6%E5%80%99eventLoop%E5%A0%B5%E5%A1%9E/" rel="prev" title="Node在密集型计算时候eventLoop堵塞">
+                Node在密集型计算时候eventLoop堵塞 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
 
 
     <div class="post-spread">
