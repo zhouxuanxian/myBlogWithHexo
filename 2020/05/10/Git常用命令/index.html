@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="周轩衔的博客小屋">
 <meta property="og:description" content="使用频率很高的命令拉取远程分支 git checkout -b feature-keep-alive remotes&#x2F;origin&#x2F;feature-keep-alive   查看git状态 git status  暂存文件 git add . &#x2F; 文件   提交代码 git commit -m &#39;提交日志’ 推送代码到远程分支 git push origin feature-keep-al">
 <meta property="article:published_time" content="2020-05-10T15:08:26.000Z">
-<meta property="article:modified_time" content="2021-04-08T02:30:08.222Z">
+<meta property="article:modified_time" content="2021-04-08T07:13:59.302Z">
 <meta property="article:author" content="周轩衔">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
@@ -395,6 +395,9 @@
 <p> <strong>删除远程分支</strong></p>
 <p><code>git push origin --delete feature-keep-alive</code></p>
 <p><strong>撤销上一步的提交</strong><br><code>git reset --soft HEAD~1</code></p>
+<p><strong>查看tag</strong><br><code>git tag -l</code></p>
+<p><strong>添加tag</strong><br><code>git tag -a v1.6.0 -m &quot;fix bug&quot;</code></p>
+<p><strong>推送tag到远程仓库</strong><br><code>git push origin v1.6.0</code></p>
 <a id="more"></a>
       
     </div>

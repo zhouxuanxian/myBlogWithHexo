@@ -316,7 +316,7 @@
     <link href="http://yoursite.com/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2020/05/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2020-05-10T15:08:26.000Z</published>
-    <updated>2021-04-08T02:30:08.222Z</updated>
+    <updated>2021-04-08T07:13:59.302Z</updated>
     
     <summary type="html">
     
@@ -338,6 +338,9 @@
 &lt;p&gt; &lt;strong&gt;删除远程分支&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;git push origin --delete feature-keep-alive&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;撤销上一步的提交&lt;/strong&gt;&lt;br&gt;&lt;code&gt;git reset --soft HEAD~1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;查看tag&lt;/strong&gt;&lt;br&gt;&lt;code&gt;git tag -l&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;添加tag&lt;/strong&gt;&lt;br&gt;&lt;code&gt;git tag -a v1.6.0 -m &amp;quot;fix bug&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;推送tag到远程仓库&lt;/strong&gt;&lt;br&gt;&lt;code&gt;git push origin v1.6.0&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
